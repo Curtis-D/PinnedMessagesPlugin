@@ -100,7 +100,8 @@ PinnedMessagesPage = function() {
                 if(channelNameText.substr(channelNameText.length - 18) == " - Pinned Messages")
                     this.state.channelName.textContent = this.state.channelName.textContent.slice(0, -18);
                 this.state.scrollerWrap.removeAttribute("style");
-                document.querySelector(".chat .messages-wrapper ~ form").style.display = "initial";
+                if(document.querySelector(".chat .messages-wrapper ~ form"))
+                    document.querySelector(".chat .messages-wrapper ~ form").style.display = "initial";
             }
 
             removeCloseListeners() {

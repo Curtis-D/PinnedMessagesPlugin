@@ -15,7 +15,7 @@ PinnedMessagesPage = function() {
         }
 
         getVersion() {
-            return "1.0.1";
+            return "1.0.2";
         }
 
         getAuthor() {
@@ -42,7 +42,7 @@ PinnedMessagesPage = function() {
                 var returnOriginal = originalRenderPopout.call(this);
                 try {
                     let messagesWrapper = document.querySelector(".messages-wrapper");
-                    let channelName = document.querySelector(".channelName-1G03vu");
+                    let channelName = document.querySelector(".channelName-3stJzi");
                     let [messagesHeader, messagesPopout] = returnOriginal.props.children;
 
                     switch(this.props.analyticsName) {
@@ -132,11 +132,11 @@ PinnedMessagesPage = function() {
                 pinnedMessagesPage.querySelectorAll(".body").forEach((element) => {
                     element.style.webkitUserSelect = "text";
                 });
-                pinnedMessagesPage.querySelectorAll(".action-buttons").forEach((element) => {
+                pinnedMessagesPage.querySelectorAll(".actionButtons-1sUUug").forEach((element) => {
                     element.style.boxShadow = "inherit";
                     element.style.backgroundColor = "inherit";
                 });       
-                pinnedMessagesPage.querySelectorAll(".jump-button").forEach((element) => {
+                pinnedMessagesPage.querySelectorAll(".jumpButton-3DTcS_").forEach((element) => {
                     element.style.backgroundColor = "inherit";
                 });
                 document.querySelector(".chat .messages-wrapper ~ form").style.display = "none";
